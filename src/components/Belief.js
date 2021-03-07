@@ -17,7 +17,7 @@ function getBeliefImage(belief) {
   )
 }
 
-function navigateToBeliefDetail(belief) {
+function navigateToBeliefDetail(navigation, belief) {
 
   return navigation.navigate('Details', { belief })
 }
@@ -29,6 +29,6 @@ export default function Belief({ belief }) {
   return <List.Item
     title={belief.es}
     left={() => getBeliefImage(belief)}
-    onPress={() => navigateToBeliefDetail(belief)}
+    onPress={() => navigateToBeliefDetail(navigation, belief)}
   />
 }
