@@ -20,7 +20,8 @@ export default function Doctrine({ doctrine }) {
       <List.Subheader>
         {doctrine.es.toUpperCase()}
       </List.Subheader>
-      {beliefs.map(belief => (                                                           <Belief                                                                            key={belief.beliefId+belief.es}
+      {beliefs.map(belief => (
+        <Belief key={belief.beliefId + belief.es}
           belief={belief}
         />
       ))}

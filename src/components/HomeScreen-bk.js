@@ -18,7 +18,7 @@ function HomeScreen({ navigation }) {
           uppercase={false}
         >
           Aa
-        <Button/>
+        </Button>
       ),
     }))
     , [navigation])
@@ -32,16 +32,16 @@ function HomeScreen({ navigation }) {
   if (!doctrines.length) return null
 
   return null
-  
+
   //  <ScrollView>
-   //   {doctrines.map(doctrine => (
- //       <Doctrine
-          //key={doctrine.id+doctrine.es}
-        //  doctrine={doctrine}
-      //  />
-    //  ))}
+  //   {doctrines.map(doctrine => (
+  //       <Doctrine
+  //key={doctrine.id+doctrine.es}
+  //  doctrine={doctrine}
+  //  />
+  //  ))}
   //  </ScrollView>
-  
+
   //)
 }
 

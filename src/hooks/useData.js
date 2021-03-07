@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-
+import { useEffect, useState } from 'react'
 import dataSource from '../data'
 
 export default () => {
@@ -13,6 +12,4 @@ export default () => {
   }, [])
 
   return data
-
 }
-

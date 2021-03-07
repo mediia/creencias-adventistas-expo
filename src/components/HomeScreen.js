@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { ScrollView, Text } from 'react-native'
-
-import { Button } from 'react-native-paper'
+import { ScrollView } from 'react-native'
 
 import useData from '../hooks/useData'
 
@@ -22,7 +20,7 @@ export default function HomeScreen({ navigation }) {
     <ScrollView>
       {doctrines.map(doctrine => (
         <Doctrine
-          key={doctrine.id+doctrine.es}
+          key={doctrine.id + doctrine.es}
           doctrine={doctrine}
         />
       ))}

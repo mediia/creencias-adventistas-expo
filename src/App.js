@@ -1,16 +1,11 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import { FlatList, Dimensions, Image, ScrollView, View, Text, StyleSheet } from 'react-native';
-
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
-
-import { Provider, Divider, Button, Portal, Modal, Chip, Headline, Caption, List, Paragraph, Title, Menu } from 'react-native-paper'
-
-import useData from './hooks/useData'
-
-import HomeScreen from './components/HomeScreen'
+import { Dimensions, FlatList, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { Chip, List, Modal, Portal, Title } from 'react-native-paper';
+import HomeScreen from './components/HomeScreen';
+import useData from './hooks/useData';
 
 const Stack = createStackNavigator()
 
@@ -19,10 +14,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Creencias Adventistas" 
+        <Stack.Screen name="Creencias Adventistas"
           component={HomeScreen}
         />
-        <Stack.Screen name="Details" 
+        <Stack.Screen name="Details"
           component={DetailsScreen}
           options={({ route }) => ({ title: route.params.belief.es })}
         />
@@ -45,10 +40,10 @@ function DetailsScreen({ route }) {
 
   return (
     <ScrollView style={style.container}>
-      <Image 
+      <Image
         style={{
           width,
-          aspectRatio: 15/8,
+          aspectRatio: 15 / 8,
         }}
         source={{
           uri: belief.image
@@ -56,7 +51,7 @@ function DetailsScreen({ route }) {
       />
       {declarations.map(declaration => (
         <Declaration
-          key={declaration.order+declaration.es}
+          key={declaration.order + declaration.es}
           declaration={declaration}
         />
       ))}
@@ -64,7 +59,7 @@ function DetailsScreen({ route }) {
   );
 }
 
-function Declaration({declaration}) {
+function Declaration({ declaration }) {
   const [modalContent, setModalContent] = React.useState()
 
   const data = useData()
@@ -97,9 +92,9 @@ function Declaration({declaration}) {
             horizontal
             showsHorizontalScrollIndicator={false}
             data={declaration.references}
-            renderItem={({item}) => (
+            renderItem={({ item }) => (
               <Chip
-                style={{marginHorizontal:2}}
+                style={{ marginHorizontal: 2 }}
                 onPress={() => openVerseInModal(item)}
               >
                 {item}
@@ -117,7 +112,7 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
   },
-  modalContentContainer:{
+  modalContentContainer: {
     backgroundColor: 'white',
     padding: 20,
   }

@@ -1,12 +1,11 @@
-import * as React from 'react';
-import { Appbar } from 'react-native-paper';
+import * as React from 'react'
+import { Appbar } from 'react-native-paper'
 
-const MyComponent = () => {
-  const _goBack = () => console.log('Went back');
+const _goBack = () => console.log('Went back')
+const _handleSearch = () => console.log('Searching')
+const _handleMore = () => console.log('Shown more')
 
-  const _handleSearch = () => console.log('Searching');
-
-  const _handleMore = () => console.log('Shown more');
+export default function MyComponent() {
 
   return (
     <Appbar.Header>
@@ -15,7 +14,5 @@ const MyComponent = () => {
       <Appbar.Action icon="magnify" onPress={_handleSearch} />
       <Appbar.Action icon="dots-vertical" onPress={_handleMore} />
     </Appbar.Header>
-  );
-};
-
-export default MyComponent;
+  )
+}
