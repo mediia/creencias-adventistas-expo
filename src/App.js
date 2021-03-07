@@ -1,16 +1,18 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { FlatList, Dimensions, Image, ScrollView, View, Text, Button, StyleSheet } from 'react-native';
+import { FlatList, Dimensions, Image, ScrollView, View, Text, StyleSheet } from 'react-native';
 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import { Portal, Modal, Chip, Headline, Caption, List, Paragraph } from 'react-native-paper'
+import { Provider, Divider, Button, Portal, Modal, Chip, Headline, Caption, List, Paragraph, Title, Menu } from 'react-native-paper'
 
 import useData from './hooks/useData'
 
-const Stack = createStackNavigator();
+import HomeScreen from './components/HomeScreen'
+
+const Stack = createStackNavigator()
 
 export default function App() {
 
@@ -27,68 +29,6 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
-
-function HomeScreen() {
-
-  const data = useData()
-
-  if (!data) return null
-
-  const doctrines = data.filter(i => i.type === 'DOCTRINE')
-
-  if (!doctrines.length) return null
-
-  return (
-    <ScrollView>
-      {doctrines.map(doctrine => (
-          <Doctrine
-            key={doctrine.id+doctrine.es}
-            doctrine={doctrine}
-          />
-        ))
-      }
-    </ScrollView>
-  );
-}
-
-function Doctrine({doctrine}) {
-
-  const data = useData()
-
-  if (!data) return null
-
-  const beliefs = data.filter(i => i.type === 'BELIEF' && i.doctrineId === doctrine.doctrineId)
-
-  if (!beliefs.length) return null
-
-  return (
-    <List.Section>
-      <List.Subheader>
-        {doctrine.es.toUpperCase()}
-      </List.Subheader>
-      {beliefs.map(belief => (
-        <Belief
-          key={belief.beliefId+belief.es}
-          belief={belief}
-        />
-      ))}
-    </List.Section>
-  )
-}
-
-function Belief({belief}) {
-
-  const navigation = useNavigation()
-
-  return <List.Item
-    title={belief.es}
-    left={() => <Image 
-      source={{uri: belief.image}}
-      style={{height: 29, aspectRatio: 15/8, borderRadius: 2}}
-    />}
-    onPress={() => navigation.navigate('Details', {belief})}
-  />
 }
 
 function DetailsScreen({ route }) {
@@ -125,21 +65,28 @@ function DetailsScreen({ route }) {
 }
 
 function Declaration({declaration}) {
-  const [visible, setVisible] = React.useState(false);
+  const [modalContent, setModalContent] = React.useState()
 
-  const showModal = () => setVisible(true);
-  const hideModal = () => setVisible(false);
-  const containerStyle = {backgroundColor: 'white', padding: 20};
+  const data = useData()
+
+  function openVerseInModal(item) {
+    if (!data) return
+
+    const reference = data.find(i => i.type === 'REFERENCE' && i.reference === item)
+
+    if (reference) setModalContent(reference.rvr95)
+  }
 
   return (
     <View>
       <Portal>
         <Modal
-          visible={visible}
-          onDismiss={hideModal}
-          contentContainerStyle={containerStyle}
+          visible={!!modalContent}
+          onDismiss={setModalContent}
+          contentContainerStyle={style.modalContentContainer}
         >
-          <Text>Example Modal. Click outside this area to dismiss.</Text>
+          <Title>{modalContent && modalContent.reference}</Title>
+          <Text>{modalContent && modalContent.verse}</Text>
         </Modal>
       </Portal>
       <List.Item
@@ -153,15 +100,15 @@ function Declaration({declaration}) {
             renderItem={({item}) => (
               <Chip
                 style={{marginHorizontal:2}}
-                onPress={showModal}
+                onPress={() => openVerseInModal(item)}
               >
                 {item}
               </Chip>
-            )} // renderItem
+            )}
             keyExtractor={item => item}
-          /> // FlatList
-        ))} // description
-      /> // List.Item
+          />
+        ))}
+      />
     </View>
   )
 }
@@ -170,5 +117,9 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
   },
+  modalContentContainer:{
+    backgroundColor: 'white',
+    padding: 20,
+  }
 })
 
