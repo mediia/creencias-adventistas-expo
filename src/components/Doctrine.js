@@ -1,9 +1,6 @@
 import React from 'react'
-
 import { List } from 'react-native-paper'
-
 import useData from '../hooks/useData'
-
 import Belief from './Belief'
 
 export default function Doctrine({ doctrine }) {

@@ -1,10 +1,7 @@
 import React from 'react'
-
-import { Image } from 'react-native'
-
-import { List } from 'react-native-paper'
-
 import { useNavigation } from '@react-navigation/native'
+import { Image } from 'react-native'
+import { List } from 'react-native-paper'
 
 function getBeliefImage(belief) {
 
