@@ -2,7 +2,8 @@
   "expo": {
     "name": "mediia-creencias-adventistas",
     "slug": "mediia-creencias-adventistas",
-    "version": "1.0.0",
+    "owner": "mediia",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
