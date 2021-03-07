@@ -12,6 +12,7 @@ export default function Doctrine({ doctrine }) {
   const beliefs = data.filter(i => i.type === 'BELIEF' && i.doctrineId === doctrine.doctrineId)
 
   if (!beliefs.length) return null
+
   return (
     <List.Section>
       <List.Subheader>
