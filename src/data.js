@@ -305,7 +305,7 @@ export default [
     type: 'DECLARATION',
     beliefId: 2,
     order: 1,
-    es: 'Dios el Padre eterno es el Creador, Originador, Sustentador y Soberano de toda la creación.',
+    es: 'Hay un solo Dios: Padre, Hijo y Espíritu Santo, una unidad de tres personas coeternas.',
     references: [
     ],
   },
@@ -313,13 +313,45 @@ export default [
     type: 'DECLARATION',
     beliefId: 2,
     order: 2,
-    es: 'Es justo y santo, misericordioso y clemente, tardo en airarse, y abundante en amor y fidelidad.',
+    es: 'Dios es inmortal, todopoderoso, omnisapiente, superior a todos y omnipresente.',
     references: [
     ],
   },
   {
     type: 'DECLARATION',
     beliefId: 2,
+    order: 3,
+    es: 'Es infinito y escapa a la comprensión humana, aunque se lo puede conocer por medio de su autorrevelación.',
+    references: [
+    ],
+  },
+  {
+    type: 'DECLARATION',
+    beliefId: 2,
+    order: 4,
+    es: 'Dios, que es amor, es digno, para siempre, de reverencia, adoración y servicio por parte de toda la creación.',
+    references: [
+    ],
+  },
+  {
+    type: 'DECLARATION',
+    beliefId: 3,
+    order: 1,
+    es: 'Dios el Padre eterno es el Creador, Originador, Sustentador y Soberano de toda la creación.',
+    references: [
+    ],
+  },
+  {
+    type: 'DECLARATION',
+    beliefId: 3,
+    order: 2,
+    es: 'Es justo y santo, misericordioso y clemente, tardo en airarse, y abundante en amor y fidelidad.',
+    references: [
+    ],
+  },
+  {
+    type: 'DECLARATION',
+    beliefId: 3,
     order: 3,
     es: 'Las cualidades y las facultades del Padre se manifiestan también en el Hijo y en el Espíritu Santo.',
     references: [
@@ -335,226 +367,184 @@ export default [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 1,
     es: 'Dios el hijo Eterno se encarnó como Jesucristo.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 2,
     es: 'Por medio de él se crearon todas las cosas, se reveló el carácter de Dios, se llevó a cabo la salvación de la humanidad y se juzga al mundo. ',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 3,
     es: 'Aunque es verdadero y eternamente Dios, llegó a ser también verdaderamente humano, Jesús el Cristo.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 4,
     es: 'Fue concebido por el Espíritu Santo y nació de la virgen María.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 5,
     es: 'Vivió y experimentó la tentación como ser humano, pero ejemplificó perfectamente la justicia y el amor de Dios.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 6,
     es: 'Mediante sus milagros, manifestó el poder de Dios, y aquellos dieron testimonio de que era el prometido Mesías de Dios.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 7,
     es: 'Sufrió y murió voluntariamente en la cruz por nuestros pecados y en nuestro lugar, resucitó de entre los muertos y ascendió al cielo para ministrar en el Santuario celestial en favor de nosotros.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 3,
+    beliefId: 4,
     order: 8,
     es: 'Volverá otra vez en gloria, para librar definitivamente a su pueblo y restaurar todas las cosas.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 4,
+    beliefId: 5,
     order: 1,
     es: 'Dios el Espíritu eterno desempeñó una parte activa, con el Padre y el Hijo, en la creación, en la encarnación y en la redención.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 4,
+    beliefId: 5,
     order: 2,
     es: 'Es una persona, de la misma manera que lo son el Padre y el Hijo. Inspiró a los autores de las Escrituras.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 4,
+    beliefId: 5,
     order: 3,
     es: 'Infundió poder a la vida de Cristo.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 4,
+    beliefId: 5,
     order: 4,
     es: 'Atrae y convence a los seres humanos, y renueva a los que responden y los transforma a la imagen de Dios.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 4,
+    beliefId: 5,
     order: 5,
     es: 'Enviado por el Padre y por el Hijo para estar siempre con sus hijos, concede dones espirituales a la iglesia, la capacita para dar testimonio en favor de Cristo y, en armonía con las Escrituras, la guía a toda la verdad.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 5,
+    beliefId: 6,
     order: 1,
     es: 'Dios reveló en las Escrituras el relato auténtico e histórico de su actividad creadora.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 5,
+    beliefId: 6,
     order: 2,
     es: 'El Señor creó el universo y, en una creación reciente de seis días, hizo “los cielos y la tierra, el mar, y todas las cosas que en ellos hay”, y reposó en el séptimo día.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 5,
+    beliefId: 6,
     order: 3,
     es: 'De ese modo, estableció el sábado como un monumento perpetuo conmemorativo de la obra que llevó a cabo y completó durante seis días literales que, junto con el sábado, constituyeron la misma unidad de tiempo que hoy llamamos semana.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 5,
+    beliefId: 6,
     order: 4,
     es: 'Dios hizo al primer hombre y a la primera mujer a su imagen, como corona de la creación, y les dio dominio sobre el mundo y la responsabilidad de cuidar de él. ',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 5,
+    beliefId: 6,
     order: 5,
     es: 'Cuando el mundo quedó terminado, era “bueno en gran manera”, proclamando la gloria de Dios.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 1,
     es: 'Dios hizo al hombre y a la mujer a su imagen, con individualidad propia, y con la facultad y la libertad de pensar y obrar.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 2,
     es: 'Aunque los creó como seres libres, cada uno es una unidad indivisible de cuerpo, mente y espíritu, que depende de Dios para la vida, el aliento y todo lo demás.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 3,
     es: 'Cuando nuestros primeros padres desobedecieron a Dios, negaron su dependencia de él y cayeron de su elevada posición.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 4,
     es: 'La imagen de Dios en ellos se desfiguró y quedaron sujetos a la muerte.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 5,
     es: 'Sus descendientes participan de esta naturaleza caída y de sus consecuencias.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 6,
     es: 'Nacen con debilidades y tendencias hacia el mal.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 7,
     es: 'Pero Dios, en Cristo, reconcilió al mundo consigo mismo y, por medio de su Espíritu Santo, restaura en los mortales penitentes la imagen de su Hacedor.',
     references: [
     ],
   }, {
     type: 'DECLARATION',
-    beliefId: 6,
+    beliefId: 7,
     order: 8,
     es: 'Creados para la gloria de Dios, se los llama a amarlo a él y a amarse mutuamente, y a cuidar del ambiente que los rodea.',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 1,
-    es: 'Toda la humanidad está ahora envuelta en un gran conflicto entre Cristo y Satanás en cuanto al carácter de Dios, su ley y su soberanía sobre el universo.',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 2,
-    es: 'Este conflicto se originó en el cielo cuando un ser creado, dotado de libre albedrío, se exaltó a sí mismo y se convirtió en Satanás, el adversario de Dios, y condujo a la rebelión a una parte de los ángeles.',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 3,
-    es: 'Satanás introdujo el espíritu de rebelión en este mundo cuando indujo a Adán y a Eva a pecar. ',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 4,
-    es: 'El pecado humano produjo como resultado la distorsión de la imagen de Dios en la humanidad, el trastorno del mundo creado y, posteriormente, su completa devastación en ocasión del diluvio global, tal como lo presenta el registro histórico de Génesis 1 al 11. ',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 5,
-    es: 'Observado por toda la creación, este mundo se convirtió en el campo de batalla del conflicto universal, a cuyo término el Dios de amor quedará finalmente vindicado. ',
-    references: [
-    ],
-  }, {
-    type: 'DECLARATION',
-    beliefId: 7,
-    order: 6,
-    es: 'Para ayudar a su pueblo en este conflicto, Cristo envía al Espíritu Santo y a los ángeles leales para guiarlo, protegerlo y sostenerlo en el camino de la salvación.',
     references: [
     ],
   }, {
